@@ -19,7 +19,7 @@ import com.example.commands.CommandParser;
 import com.example.commands.ParsedCommand;
 import com.example.commands.concrete.DuckCommand;
 
-public class GameController implements Initializable {
+public class MainTerminalController implements Initializable {
 
     @FXML private Label clockLabel;
     @FXML private Label statusIndicator;
