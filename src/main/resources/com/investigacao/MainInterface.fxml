@@ -89,7 +89,7 @@
                 <Label fx:id="promptLabel" styleClass="command-prompt" text="DET.SOUZA@FORENSYS:~$ " />
 
                 <!-- Campo de texto -->
-                <TextField fx:id="commandInput" onAction="#onCommandEntered" onKeyPressed="#onKeyPressed" promptText="digite um comando..." styleClass="command-textfield" HBox.hgrow="ALWAYS" />
+                <TextField fx:id="commandInput" onAction="#onCommandEntered" promptText="digite um comando..." styleClass="command-textfield" HBox.hgrow="ALWAYS" />
 
                 <!-- Cursor simulado (visual) -->
                 <Label fx:id="cursorLabel" styleClass="cursor-blink" text="█" />
