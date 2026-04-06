@@ -18,7 +18,7 @@ public class App extends Application {
 
         Scene scene = new Scene(root, 1024, 768);
 
-        stage.setTitle("FORENSYS v2.1.4 — Sistema de Análise Forense");
+        stage.setTitle("Projeto POO");
         stage.setScene(scene);
 
         stage.initStyle(StageStyle.UNDECORATED);
