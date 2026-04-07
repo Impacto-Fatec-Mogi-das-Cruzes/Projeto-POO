@@ -6,7 +6,7 @@ import com.example.commands.Command;
 
 // Concrete implementation o Command Interface
 public class DuckCommand implements Command{
-
+    // TODO: find a way to deal with args
     @Override
     public String execute(List<String> args) {
         return """

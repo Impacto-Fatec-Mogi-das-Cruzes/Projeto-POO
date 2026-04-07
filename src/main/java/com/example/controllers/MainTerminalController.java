@@ -15,9 +15,10 @@ import java.net.URL;
 //import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+import com.example.commands.Command;
 import com.example.commands.CommandParser;
 import com.example.commands.ParsedCommand;
-import com.example.commands.concretes.DuckCommand;
+import com.example.commands.registries.CommandRegistry;
 
 public class MainTerminalController implements Initializable {
 
@@ -55,19 +56,10 @@ public class MainTerminalController implements Initializable {
         CommandParser commandParser = CommandParser.getInstance();
         ParsedCommand parsedCommand = commandParser.parse(rawInput);
 
-        // TODO: implement a design for getting the command and a class to format output
-        String output = "";
-        switch (parsedCommand.command()) {
-            case "duck":
-                output = new DuckCommand().execute(parsedCommand.args());
-                break;
-            default:
-                output = "Command: " + parsedCommand.command() + "\nArgs: \n\t";
-                for (String arg : parsedCommand.args()) {
-                    output += " [" + arg + "]";
-                }
-                break;
-        }
+        Command command = CommandRegistry.getInstance().get(parsedCommand.command());
+
+        // TODO: implement a class to format output
+        String output = command != null ? command.execute(parsedCommand.args()) : "Invalid Command, please use the help command";
 
         addTerminalLine(output, "term-line-system");   
         scrollToBottom();
