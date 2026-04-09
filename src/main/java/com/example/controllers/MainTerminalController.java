@@ -16,10 +16,10 @@ import java.net.URL;
 import java.util.*;
 
 import com.example.commands.CommandParser;
+import com.example.commands.CommandRegistry;
 import com.example.commands.ParsedCommand;
 import com.example.commands.TerminalCommand;
 import com.example.commands.concretes.DuckCommand;
-import com.example.commands.registries.CommandRegistry;
 
 public class MainTerminalController implements Initializable {
 

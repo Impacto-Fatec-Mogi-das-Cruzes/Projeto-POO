@@ -1,9 +1,7 @@
-package com.example.commands.registries;
+package com.example.commands;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import com.example.commands.TerminalCommand;
 
 // Registry Pattern
 public class CommandRegistry {
