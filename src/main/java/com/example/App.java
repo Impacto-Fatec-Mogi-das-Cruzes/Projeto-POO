@@ -12,22 +12,26 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(
-            getClass().getResource("MainTerminalInterface.fxml")
-        );
-        Parent root = loader.load();
+        try {
+            FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("MainTerminalInterface.fxml")
+            );
+            Parent root = loader.load();
+    
+            Scene scene = new Scene(root, 1024, 768);
+    
+            stage.setTitle("Projeto POO");
+            stage.setScene(scene);
+    
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
+    
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setResizable(false);
 
-        Scene scene = new Scene(root, 1024, 768);
-
-        stage.setTitle("Projeto POO");
-        stage.setScene(scene);
-
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
-
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.setResizable(false);
-
-        stage.show();
+            stage.show();
+        } catch (Exception e) {
+            System.err.println(e);
+        }
     }
 
     public static void main(String[] args) {
