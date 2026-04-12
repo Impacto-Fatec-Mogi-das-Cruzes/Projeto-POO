@@ -1,0 +1,537 @@
+{
+  "root": {
+    "SYS": {
+      "type": "directory",
+      "password": null,
+      "hidden": false,
+      "bin": {
+        "type": "directory",
+        "password": null,
+        "hidden": false,
+        "ls.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "cp.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "mv.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "rm.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "cat.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "grep.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "chmod.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "chown.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "kill.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        },
+        "ps.bin": {
+          "type": "binary",
+          "password": null,
+          "hidden": false
+        }
+      },
+      "libs": {
+        "type": "directory",
+        "password": null,
+        "hidden": false,
+        "libc.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libm.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libssl.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libcrypto.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libnetware.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "liboracle7.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libdl.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libz.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "libgcc_s.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        },
+        "librt.so": {
+          "type": "shared-object",
+          "password": null,
+          "hidden": false
+        }
+      }
+    },
+    "USR": {
+      "type": "directory",
+      "password": null,
+      "hidden": false,
+      "Media": {
+        "type": "directory",
+        "password": null,
+        "hidden": false,
+        "PROJECTS": {
+          "type": "directory",
+          "password": null,
+          "hidden": false,
+          "KalyB": {
+            "type": "directory",
+            "categoria": "Segurança-Rede",
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "netware_access.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              },
+              ".node_err94.tmp": {
+                "type": "log",
+                "password": null,
+                "hidden": true
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "kalnetmon.cpp": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "packet_filter.cpp": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "libkalnet.so": {
+                "type": "shared-object",
+                "password": null,
+                "hidden": true
+              }
+            }
+          },
+          "Oh'sink": {
+            "type": "directory",
+            "categoria": "Gestão",
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "lancamentos.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              },
+              "cache_sync.log": {
+                "type": "log",
+                "password": null,
+                "hidden": true
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "folha_pag.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "banco_horas.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "~relat_orig.bak": {
+                "type": "backup",
+                "password": null,
+                "hidden": true
+              }
+            }
+          },
+          "iFind": {
+            "type": "directory",
+            "categoria": "Rastreio",
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "contratos.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              },
+              ".idx_rebuild94.log": {
+                "type": "log",
+                "password": null,
+                "hidden": true
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "licit_track.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "contrato_parser.cpp": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              }
+            }
+          },
+          "SPHINX": {
+            "type": "directory",
+            "categoria": "Segurança-Acesso",
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "auth_trail.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "acesso.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "permissoes.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              ".auth_shadow.cfg": {
+                "type": "config",
+                "password": null,
+                "hidden": true
+              },
+              "ghost_user.dbf": {
+                "type": "database",
+                "password": null,
+                "hidden": true
+              }
+            }
+          },
+          "ASAi": {
+            "type": "directory",
+            "categoria": "AI",
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "analise.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              },
+              ".dump_core94.log": {
+                "type": "log",
+                "password": null,
+                "hidden": true
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "indicadores.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "relat_exec.pas": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              }
+            }
+          },
+          "DuuL": {
+            "type": "directory",
+            "categoria": "DATA",
+            "flag": "*",
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "oracle_redo.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "schema.sql": {
+                "type": "sql",
+                "password": null,
+                "hidden": false
+              },
+              "migrate.sql": {
+                "type": "sql",
+                "password": null,
+                "hidden": false
+              },
+              "schema_93.bak": {
+                "type": "backup",
+                "password": null,
+                "hidden": true
+              },
+              ".exp_shadow.sql": {
+                "type": "sql",
+                "password": null,
+                "hidden": true
+              }
+            }
+          },
+          "ALisyc": {
+            "type": "directory",
+            "categoria": null,
+            "password": null,
+            "hidden": false,
+            "README.md": {
+              "type": "markdown",
+              "password": null,
+              "hidden": false
+            },
+            "config.ini": {
+              "type": "config",
+              "password": null,
+              "hidden": false
+            },
+            "logs": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "sync_jobs.log": {
+                "type": "log",
+                "password": null,
+                "hidden": false
+              },
+              ".residual_out94.log": {
+                "type": "log",
+                "password": null,
+                "hidden": true
+              }
+            },
+            "src": {
+              "type": "directory",
+              "password": null,
+              "hidden": false,
+              "sync_agent.cpp": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "watcher.cpp": {
+                "type": "source",
+                "password": null,
+                "hidden": false
+              },
+              "cleanup_cron.sh": {
+                "type": "script",
+                "password": null,
+                "hidden": true
+              }
+            }
+          }
+        }
+      },
+      "MOUNT": {
+        "type": "directory",
+        "password": null,
+        "hidden": false,
+        "Disc_alpha": {
+          "type": "directory",
+          "password": null,
+          "hidden": false,
+          "Documents": {
+            "type": "directory",
+            "password": null,
+            "hidden": false
+          },
+          "Downloads": {
+            "type": "directory",
+            "password": null,
+            "hidden": false
+          },
+          "Music": {
+            "type": "directory",
+            "password": null,
+            "hidden": false
+          },
+          "Pictures": {
+            "type": "directory",
+            "password": null,
+            "hidden": false
+          },
+          "Videos": {
+            "type": "directory",
+            "password": null,
+            "hidden": false
+          },
+          "Desktop": {
+            "type": "directory",
+            "password": null,
+            "hidden": false
+          },
+          "Applications": {
+            "type": "directory",
+            "password": null,
+            "hidden": false,
+            "AlfaTalk": {
+              "type": "application",
+              "password": null,
+              "hidden": false
+            },
+            "Vx Codex": {
+              "type": "application",
+              "password": null,
+              "hidden": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
