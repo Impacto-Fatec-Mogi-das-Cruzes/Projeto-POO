@@ -1,4 +1,4 @@
-package com.example.parser.strategies;
+package com.example.loaders.strategies;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,7 +1,7 @@
-package com.example.parser;
+package com.example.loaders;
 
 import com.example.gamestate.settings.Settings;
-import com.example.parser.strategies.ParserSettings;
+import com.example.loaders.strategies.ParserSettings;
 
 public class SettingsLoader extends Loader<Settings>{
     private static SettingsLoader instance;

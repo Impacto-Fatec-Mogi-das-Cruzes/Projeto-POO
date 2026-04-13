@@ -1,7 +1,7 @@
-package com.example.parser;
+package com.example.loaders;
 
 import com.example.commands.ParsedCommand;
-import com.example.parser.strategies.ParserCommand;
+import com.example.loaders.strategies.ParserCommand;
 
 public class CommandLoader extends Loader<ParsedCommand> {
     private static CommandLoader instance;

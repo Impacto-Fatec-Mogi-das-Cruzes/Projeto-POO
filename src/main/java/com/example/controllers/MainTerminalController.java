@@ -19,7 +19,7 @@ import com.example.commands.CommandRegistry;
 import com.example.commands.ParsedCommand;
 import com.example.commands.TerminalCommand;
 import com.example.commands.concretes.DuckCommand;
-import com.example.parser.CommandLoader;
+import com.example.loaders.CommandLoader;
 
 public class MainTerminalController implements Initializable {
 

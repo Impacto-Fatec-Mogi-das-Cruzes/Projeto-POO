@@ -1,7 +1,8 @@
 package com.example;
 
 import com.example.gamestate.settings.Settings;
-import com.example.parser.SettingsLoader;
+import com.example.loaders.SettingsLoader;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

@@ -1,6 +1,6 @@
-package com.example.parser;
+package com.example.loaders;
 
-import com.example.parser.strategies.ParserStrategy;
+import com.example.loaders.strategies.ParserStrategy;
 
 public abstract class Loader<T> {
     private final ParserStrategy<T> parseStrategy;
