@@ -7,10 +7,10 @@
       "blocked": false,
       "hidden": false,
       "description": null,
-      "size": 0,
-      "created": null,
-      "updated": null,
-      "readOnly": false,
+      "size": null,
+      "created": "1997-11-04T08:00:00",
+      "updated": "1998-01-10T09:15:00",
+      "readOnly": true,
       "bin": {
         "name": "bin",
         "type": "directory",
@@ -18,10 +18,10 @@
         "blocked": false,
         "hidden": false,
         "description": null,
-        "size": 0,
-        "created": null,
-        "updated": null,
-        "readOnly": false,
+        "size": null,
+        "created": "1997-11-04T08:05:00",
+        "updated": "1998-01-10T09:20:00",
+        "readOnly": true,
         "ls.bin": {
           "name": "ls.bin",
           "type": "binary",
@@ -29,10 +29,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 14336,
+          "created": "1997-11-04T08:10:00",
+          "updated": "1998-01-10T09:22:00",
+          "readOnly": true
         },
         "cp.bin": {
           "name": "cp.bin",
@@ -41,10 +41,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 18432,
+          "created": "1997-11-04T08:10:00",
+          "updated": "1998-01-10T09:22:00",
+          "readOnly": true
         },
         "mv.bin": {
           "name": "mv.bin",
@@ -53,10 +53,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 16384,
+          "created": "1997-11-04T08:11:00",
+          "updated": "1998-01-10T09:23:00",
+          "readOnly": true
         },
         "rm.bin": {
           "name": "rm.bin",
@@ -65,10 +65,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 12288,
+          "created": "1997-11-04T08:11:00",
+          "updated": "1998-01-10T09:23:00",
+          "readOnly": true
         },
         "cat.bin": {
           "name": "cat.bin",
@@ -77,10 +77,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 10240,
+          "created": "1997-11-04T08:12:00",
+          "updated": "1998-01-10T09:24:00",
+          "readOnly": true
         },
         "grep.bin": {
           "name": "grep.bin",
@@ -89,10 +89,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 22528,
+          "created": "1997-11-04T08:12:00",
+          "updated": "1998-02-03T11:00:00",
+          "readOnly": true
         },
         "chmod.bin": {
           "name": "chmod.bin",
@@ -101,10 +101,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 13312,
+          "created": "1997-11-04T08:13:00",
+          "updated": "1998-01-10T09:25:00",
+          "readOnly": true
         },
         "chown.bin": {
           "name": "chown.bin",
@@ -113,10 +113,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 13312,
+          "created": "1997-11-04T08:13:00",
+          "updated": "1998-01-10T09:25:00",
+          "readOnly": true
         },
         "kill.bin": {
           "name": "kill.bin",
@@ -125,10 +125,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 9216,
+          "created": "1997-11-04T08:14:00",
+          "updated": "1998-01-10T09:26:00",
+          "readOnly": true
         },
         "ps.bin": {
           "name": "ps.bin",
@@ -137,10 +137,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 20480,
+          "created": "1997-11-04T08:14:00",
+          "updated": "1998-02-03T11:05:00",
+          "readOnly": true
         }
       },
       "libs": {
@@ -150,10 +150,10 @@
         "blocked": false,
         "hidden": false,
         "description": null,
-        "size": 0,
-        "created": null,
-        "updated": null,
-        "readOnly": false,
+        "size": null,
+        "created": "1997-11-04T08:20:00",
+        "updated": "1998-03-18T14:00:00",
+        "readOnly": true,
         "libc.so": {
           "name": "libc.so",
           "type": "shared-object",
@@ -161,10 +161,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 1458176,
+          "created": "1997-11-04T08:22:00",
+          "updated": "1998-01-10T10:00:00",
+          "readOnly": true
         },
         "libm.so": {
           "name": "libm.so",
@@ -173,10 +173,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 307200,
+          "created": "1997-11-04T08:22:00",
+          "updated": "1998-01-10T10:01:00",
+          "readOnly": true
         },
         "libssl.so": {
           "name": "libssl.so",
@@ -185,10 +185,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 512000,
+          "created": "1998-01-15T09:00:00",
+          "updated": "1998-04-22T16:30:00",
+          "readOnly": true
         },
         "libcrypto.so": {
           "name": "libcrypto.so",
@@ -197,10 +197,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 921600,
+          "created": "1998-01-15T09:05:00",
+          "updated": "1998-04-22T16:35:00",
+          "readOnly": true
         },
         "libnetware.so": {
           "name": "libnetware.so",
@@ -209,10 +209,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 409600,
+          "created": "1998-02-10T10:30:00",
+          "updated": "1998-06-05T13:45:00",
+          "readOnly": true
         },
         "liboracle7.so": {
           "name": "liboracle7.so",
@@ -221,10 +221,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 2097152,
+          "created": "1997-12-01T11:00:00",
+          "updated": "1998-03-18T14:00:00",
+          "readOnly": true
         },
         "libdl.so": {
           "name": "libdl.so",
@@ -233,10 +233,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 20480,
+          "created": "1997-11-04T08:25:00",
+          "updated": "1998-01-10T10:05:00",
+          "readOnly": true
         },
         "libz.so": {
           "name": "libz.so",
@@ -245,10 +245,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 102400,
+          "created": "1997-11-04T08:26:00",
+          "updated": "1998-01-10T10:06:00",
+          "readOnly": true
         },
         "libgcc_s.so": {
           "name": "libgcc_s.so",
@@ -257,10 +257,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 65536,
+          "created": "1997-11-04T08:26:00",
+          "updated": "1998-01-10T10:07:00",
+          "readOnly": true
         },
         "librt.so": {
           "name": "librt.so",
@@ -269,10 +269,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false
+          "size": 45056,
+          "created": "1997-11-04T08:27:00",
+          "updated": "1998-01-10T10:08:00",
+          "readOnly": true
         }
       }
     },
@@ -283,10 +283,10 @@
       "blocked": false,
       "hidden": false,
       "description": null,
-      "size": 0,
-      "created": null,
-      "updated": null,
-      "readOnly": false,
+      "size": null,
+      "created": "1998-01-20T08:00:00",
+      "updated": "1998-11-30T17:00:00",
+      "readOnly": true,
       "Media": {
         "name": "Media",
         "type": "directory",
@@ -294,10 +294,10 @@
         "blocked": false,
         "hidden": false,
         "description": null,
-        "size": 0,
-        "created": null,
-        "updated": null,
-        "readOnly": false,
+        "size": null,
+        "created": "1998-01-20T08:30:00",
+        "updated": "1998-11-30T17:00:00",
+        "readOnly": true,
         "PROJECTS": {
           "name": "PROJECTS",
           "type": "directory",
@@ -305,10 +305,10 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
-          "readOnly": false,
+          "size": null,
+          "created": "1998-01-20T09:00:00",
+          "updated": "1998-11-30T17:00:00",
+          "readOnly": true,
           "KalyB": {
             "name": "KalyB",
             "type": "directory",
@@ -317,10 +317,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-02-09T10:00:00",
+            "updated": "1998-10-14T15:30:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -328,10 +328,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 4096,
+              "created": "1998-02-09T10:05:00",
+              "updated": "1998-10-14T15:30:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -340,10 +340,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 2048,
+              "created": "1998-02-09T10:10:00",
+              "updated": "1998-09-03T11:00:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -352,10 +352,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-02-09T10:15:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "netware_access.log": {
                 "name": "netware_access.log",
                 "type": "log",
@@ -363,9 +363,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 819200,
+                "created": "1998-02-10T00:00:00",
+                "updated": "1998-11-28T23:58:00",
                 "readOnly": false
               },
               ".node_err94.tmp": {
@@ -375,10 +375,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 512,
+                "created": "1998-07-22T03:14:00",
+                "updated": "1998-07-22T03:14:00",
+                "readOnly": true
               }
             },
             "src": {
@@ -388,10 +388,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-02-09T10:20:00",
+              "updated": "1998-10-14T15:00:00",
+              "readOnly": true,
               "kalnetmon.cpp": {
                 "name": "kalnetmon.cpp",
                 "type": "source",
@@ -399,10 +399,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 36864,
+                "created": "1998-02-12T14:00:00",
+                "updated": "1998-10-14T15:00:00",
+                "readOnly": true
               },
               "packet_filter.cpp": {
                 "name": "packet_filter.cpp",
@@ -411,10 +411,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 28672,
+                "created": "1998-02-18T09:30:00",
+                "updated": "1998-09-27T10:45:00",
+                "readOnly": true
               },
               "libkalnet.so": {
                 "name": "libkalnet.so",
@@ -423,10 +423,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 131072,
+                "created": "1998-03-01T16:00:00",
+                "updated": "1998-10-14T15:05:00",
+                "readOnly": true
               }
             }
           },
@@ -438,10 +438,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-01-26T09:00:00",
+            "updated": "1998-11-05T17:30:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -449,10 +449,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 5120,
+              "created": "1998-01-26T09:10:00",
+              "updated": "1998-11-05T17:30:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -461,10 +461,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 1536,
+              "created": "1998-01-26T09:15:00",
+              "updated": "1998-08-01T08:00:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -473,10 +473,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-01-26T09:20:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "lancamentos.log": {
                 "name": "lancamentos.log",
                 "type": "log",
@@ -484,9 +484,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 1048576,
+                "created": "1998-01-31T18:00:00",
+                "updated": "1998-11-28T18:00:00",
                 "readOnly": false
               },
               "cache_sync.log": {
@@ -496,10 +496,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 20480,
+                "created": "1998-03-10T02:00:00",
+                "updated": "1998-11-28T02:00:00",
+                "readOnly": true
               }
             },
             "src": {
@@ -509,10 +509,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-01-26T09:30:00",
+              "updated": "1998-10-20T14:00:00",
+              "readOnly": true,
               "folha_pag.pas": {
                 "name": "folha_pag.pas",
                 "type": "source",
@@ -520,10 +520,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 45056,
+                "created": "1998-02-03T10:00:00",
+                "updated": "1998-10-20T14:00:00",
+                "readOnly": true
               },
               "banco_horas.pas": {
                 "name": "banco_horas.pas",
@@ -532,10 +532,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 28672,
+                "created": "1998-02-10T11:00:00",
+                "updated": "1998-09-15T09:30:00",
+                "readOnly": true
               },
               "~relat_orig.bak": {
                 "name": "~relat_orig.bak",
@@ -544,10 +544,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 39936,
+                "created": "1998-05-28T22:17:00",
+                "updated": "1998-05-28T22:17:00",
+                "readOnly": true
               }
             }
           },
@@ -559,10 +559,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-03-02T08:00:00",
+            "updated": "1998-11-10T16:00:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -570,10 +570,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 6144,
+              "created": "1998-03-02T08:10:00",
+              "updated": "1998-11-10T16:00:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -582,10 +582,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 2048,
+              "created": "1998-03-02T08:15:00",
+              "updated": "1998-07-14T10:00:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -594,10 +594,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-03-02T08:20:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "contratos.log": {
                 "name": "contratos.log",
                 "type": "log",
@@ -605,9 +605,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 2097152,
+                "created": "1998-03-05T00:00:00",
+                "updated": "1998-11-28T23:59:00",
                 "readOnly": false
               },
               ".idx_rebuild94.log": {
@@ -617,10 +617,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 8192,
+                "created": "1998-08-19T04:30:00",
+                "updated": "1998-08-19T05:45:00",
+                "readOnly": true
               }
             },
             "src": {
@@ -630,10 +630,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-03-02T09:00:00",
+              "updated": "1998-11-10T15:00:00",
+              "readOnly": true,
               "licit_track.pas": {
                 "name": "licit_track.pas",
                 "type": "source",
@@ -641,10 +641,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 53248,
+                "created": "1998-03-10T09:00:00",
+                "updated": "1998-11-10T15:00:00",
+                "readOnly": true
               },
               "contrato_parser.cpp": {
                 "name": "contrato_parser.cpp",
@@ -653,10 +653,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 32768,
+                "created": "1998-03-15T14:00:00",
+                "updated": "1998-10-02T11:30:00",
+                "readOnly": true
               }
             }
           },
@@ -668,10 +668,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-01-28T07:30:00",
+            "updated": "1998-11-20T18:00:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -679,10 +679,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 7168,
+              "created": "1998-01-28T07:40:00",
+              "updated": "1998-11-20T18:00:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -691,10 +691,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 3072,
+              "created": "1998-01-28T07:45:00",
+              "updated": "1998-10-08T09:00:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -703,10 +703,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-01-28T08:00:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "auth_trail.log": {
                 "name": "auth_trail.log",
                 "type": "log",
@@ -714,9 +714,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 4194304,
+                "created": "1998-01-30T00:00:00",
+                "updated": "1998-11-28T23:59:00",
                 "readOnly": false
               }
             },
@@ -727,10 +727,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-01-28T08:30:00",
+              "updated": "1998-11-20T17:00:00",
+              "readOnly": true,
               "acesso.pas": {
                 "name": "acesso.pas",
                 "type": "source",
@@ -738,10 +738,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 40960,
+                "created": "1998-02-05T10:00:00",
+                "updated": "1998-11-20T17:00:00",
+                "readOnly": true
               },
               "permissoes.pas": {
                 "name": "permissoes.pas",
@@ -750,10 +750,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 30720,
+                "created": "1998-02-12T11:30:00",
+                "updated": "1998-10-30T14:00:00",
+                "readOnly": true
               },
               ".auth_shadow.cfg": {
                 "name": ".auth_shadow.cfg",
@@ -762,10 +762,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 1024,
+                "created": "1998-02-05T10:05:00",
+                "updated": "1998-10-08T09:05:00",
+                "readOnly": true
               },
               "ghost_user.dbf": {
                 "name": "ghost_user.dbf",
@@ -774,10 +774,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 16384,
+                "created": "1998-02-20T08:00:00",
+                "updated": "1998-06-15T12:00:00",
+                "readOnly": true
               }
             }
           },
@@ -789,10 +789,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-04-06T09:00:00",
+            "updated": "1998-11-25T16:00:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -800,10 +800,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 8192,
+              "created": "1998-04-06T09:10:00",
+              "updated": "1998-11-25T16:00:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -812,10 +812,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 2560,
+              "created": "1998-04-06T09:15:00",
+              "updated": "1998-09-10T11:00:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -824,10 +824,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-04-06T09:20:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "analise.log": {
                 "name": "analise.log",
                 "type": "log",
@@ -835,9 +835,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 614400,
+                "created": "1998-04-10T00:00:00",
+                "updated": "1998-11-28T23:58:00",
                 "readOnly": false
               },
               ".dump_core94.log": {
@@ -847,10 +847,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 4096,
+                "created": "1998-09-03T11:22:00",
+                "updated": "1998-09-03T11:22:00",
+                "readOnly": true
               }
             },
             "src": {
@@ -860,10 +860,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-04-06T09:30:00",
+              "updated": "1998-11-25T15:30:00",
+              "readOnly": true,
               "indicadores.pas": {
                 "name": "indicadores.pas",
                 "type": "source",
@@ -871,10 +871,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 49152,
+                "created": "1998-04-14T10:00:00",
+                "updated": "1998-11-25T15:30:00",
+                "readOnly": true
               },
               "relat_exec.pas": {
                 "name": "relat_exec.pas",
@@ -883,10 +883,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 36864,
+                "created": "1998-04-21T14:00:00",
+                "updated": "1998-10-31T09:00:00",
+                "readOnly": true
               }
             }
           },
@@ -899,10 +899,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1997-12-15T10:00:00",
+            "updated": "1998-11-30T17:00:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -910,10 +910,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 9216,
+              "created": "1997-12-15T10:10:00",
+              "updated": "1998-11-30T17:00:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -922,10 +922,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 1024,
+              "created": "1997-12-15T10:15:00",
+              "updated": "1998-06-01T08:00:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -934,10 +934,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1997-12-15T10:20:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "oracle_redo.log": {
                 "name": "oracle_redo.log",
                 "type": "log",
@@ -945,9 +945,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 10485760,
+                "created": "1997-12-20T00:00:00",
+                "updated": "1998-11-28T23:59:00",
                 "readOnly": false
               }
             },
@@ -958,10 +958,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1997-12-15T10:30:00",
+              "updated": "1998-11-15T12:00:00",
+              "readOnly": true,
               "schema.sql": {
                 "name": "schema.sql",
                 "type": "sql",
@@ -969,10 +969,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 73728,
+                "created": "1997-12-20T09:00:00",
+                "updated": "1998-11-15T12:00:00",
+                "readOnly": true
               },
               "migrate.sql": {
                 "name": "migrate.sql",
@@ -981,10 +981,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 20480,
+                "created": "1998-04-01T10:00:00",
+                "updated": "1998-11-15T11:30:00",
+                "readOnly": true
               },
               "schema_93.bak": {
                 "name": "schema_93.bak",
@@ -993,10 +993,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 57344,
+                "created": "1993-08-10T09:00:00",
+                "updated": "1998-01-05T08:00:00",
+                "readOnly": true
               },
               ".exp_shadow.sql": {
                 "name": ".exp_shadow.sql",
@@ -1005,10 +1005,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 65536,
+                "created": "1998-06-30T22:00:00",
+                "updated": "1998-10-31T22:00:00",
+                "readOnly": true
               }
             }
           },
@@ -1020,10 +1020,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-05-11T09:00:00",
+            "updated": "1998-11-22T14:00:00",
+            "readOnly": true,
             "README.md": {
               "name": "README.md",
               "type": "markdown",
@@ -1031,10 +1031,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 5632,
+              "created": "1998-05-11T09:10:00",
+              "updated": "1998-11-22T14:00:00",
+              "readOnly": true
             },
             "config.ini": {
               "name": "config.ini",
@@ -1043,10 +1043,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 2048,
+              "created": "1998-05-11T09:15:00",
+              "updated": "1998-10-01T08:30:00",
+              "readOnly": true
             },
             "logs": {
               "name": "logs",
@@ -1055,10 +1055,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-05-11T09:20:00",
+              "updated": "1998-11-28T23:59:00",
+              "readOnly": true,
               "sync_jobs.log": {
                 "name": "sync_jobs.log",
                 "type": "log",
@@ -1066,9 +1066,9 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
+                "size": 327680,
+                "created": "1998-05-15T00:00:00",
+                "updated": "1998-11-28T23:59:00",
                 "readOnly": false
               },
               ".residual_out94.log": {
@@ -1078,10 +1078,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 2048,
+                "created": "1998-10-17T03:05:00",
+                "updated": "1998-10-17T03:05:00",
+                "readOnly": true
               }
             },
             "src": {
@@ -1091,10 +1091,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false,
+              "size": null,
+              "created": "1998-05-11T09:30:00",
+              "updated": "1998-11-22T13:30:00",
+              "readOnly": true,
               "sync_agent.cpp": {
                 "name": "sync_agent.cpp",
                 "type": "source",
@@ -1102,10 +1102,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 57344,
+                "created": "1998-05-20T10:00:00",
+                "updated": "1998-11-22T13:30:00",
+                "readOnly": true
               },
               "watcher.cpp": {
                 "name": "watcher.cpp",
@@ -1114,10 +1114,10 @@
                 "blocked": false,
                 "hidden": false,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 36864,
+                "created": "1998-05-27T14:00:00",
+                "updated": "1998-10-15T11:00:00",
+                "readOnly": true
               },
               "cleanup_cron.sh": {
                 "name": "cleanup_cron.sh",
@@ -1126,10 +1126,10 @@
                 "blocked": false,
                 "hidden": true,
                 "description": null,
-                "size": 0,
-                "created": null,
-                "updated": null,
-                "readOnly": false
+                "size": 4096,
+                "created": "1998-06-03T08:00:00",
+                "updated": "1998-10-01T08:35:00",
+                "readOnly": true
               }
             }
           }
@@ -1142,10 +1142,10 @@
         "blocked": false,
         "hidden": false,
         "description": null,
-        "size": 0,
-        "created": null,
-        "updated": null,
-        "readOnly": false,
+        "size": null,
+        "created": "1998-01-20T08:00:00",
+        "updated": "1998-11-30T09:00:00",
+        "readOnly": true,
         "Disc_alpha": {
           "name": "Disc_alpha",
           "type": "directory",
@@ -1153,9 +1153,9 @@
           "blocked": false,
           "hidden": false,
           "description": null,
-          "size": 0,
-          "created": null,
-          "updated": null,
+          "size": null,
+          "created": "1998-01-20T08:10:00",
+          "updated": "1998-11-30T09:00:00",
           "readOnly": false,
           "Documents": {
             "name": "Documents",
@@ -1164,9 +1164,9 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
+            "size": null,
+            "created": "1998-01-20T08:15:00",
+            "updated": "1998-11-29T17:00:00",
             "readOnly": false
           },
           "Downloads": {
@@ -1176,9 +1176,9 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
+            "size": null,
+            "created": "1998-01-20T08:15:00",
+            "updated": "1998-11-28T12:00:00",
             "readOnly": false
           },
           "Music": {
@@ -1188,9 +1188,9 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
+            "size": null,
+            "created": "1998-01-20T08:16:00",
+            "updated": "1998-09-12T20:00:00",
             "readOnly": false
           },
           "Pictures": {
@@ -1200,9 +1200,9 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
+            "size": null,
+            "created": "1998-01-20T08:16:00",
+            "updated": "1998-10-05T15:00:00",
             "readOnly": false
           },
           "Videos": {
@@ -1212,9 +1212,9 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
+            "size": null,
+            "created": "1998-01-20T08:17:00",
+            "updated": "1998-08-20T19:00:00",
             "readOnly": false
           },
           "Desktop": {
@@ -1224,9 +1224,9 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
+            "size": null,
+            "created": "1998-01-20T08:18:00",
+            "updated": "1998-11-30T09:00:00",
             "readOnly": false
           },
           "Applications": {
@@ -1236,10 +1236,10 @@
             "blocked": false,
             "hidden": false,
             "description": null,
-            "size": 0,
-            "created": null,
-            "updated": null,
-            "readOnly": false,
+            "size": null,
+            "created": "1998-01-20T08:20:00",
+            "updated": "1998-10-10T11:00:00",
+            "readOnly": true,
             "AlfaTalk": {
               "name": "AlfaTalk",
               "type": "application",
@@ -1247,10 +1247,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 2621440,
+              "created": "1998-03-25T10:00:00",
+              "updated": "1998-10-10T11:00:00",
+              "readOnly": true
             },
             "Vx Codex": {
               "name": "Vx Codex",
@@ -1259,10 +1259,10 @@
               "blocked": false,
               "hidden": false,
               "description": null,
-              "size": 0,
-              "created": null,
-              "updated": null,
-              "readOnly": false
+              "size": 4194304,
+              "created": "1998-05-02T14:00:00",
+              "updated": "1998-10-10T11:05:00",
+              "readOnly": true
             }
           }
         }
