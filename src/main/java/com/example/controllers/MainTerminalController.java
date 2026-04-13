@@ -15,11 +15,11 @@ import java.net.URL;
 //import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import com.example.commands.CommandParser;
 import com.example.commands.CommandRegistry;
 import com.example.commands.ParsedCommand;
 import com.example.commands.TerminalCommand;
 import com.example.commands.concretes.DuckCommand;
+import com.example.parser.CommandLoader;
 
 public class MainTerminalController implements Initializable {
 
@@ -56,8 +56,8 @@ public class MainTerminalController implements Initializable {
         String rawInput = commandInput.getText().trim();
         if (rawInput.isEmpty()) return;
 
-        CommandParser commandParser = CommandParser.getInstance();
-        ParsedCommand parsedCommand = commandParser.parse(rawInput);
+        CommandLoader commandLoader = CommandLoader.getInstance();
+        ParsedCommand parsedCommand = commandLoader.parse(rawInput);
 
         TerminalCommand command = CommandRegistry.getInstance().get(parsedCommand.command());
         

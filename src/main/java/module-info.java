@@ -4,5 +4,6 @@ module com.example {
     requires com.fasterxml.jackson.databind;
 
     opens com.example.controllers to javafx.fxml;
+    opens com.example.gamestate.settings to com.fasterxml.jackson.databind;
     exports com.example;
 }
