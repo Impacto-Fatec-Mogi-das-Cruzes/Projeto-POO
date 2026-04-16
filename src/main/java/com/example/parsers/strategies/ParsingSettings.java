@@ -1,17 +1,17 @@
-package com.example.loaders.strategies;
+package com.example.parsers.strategies;
 
 import java.io.InputStream;
-
 import com.example.gamestate.settings.Settings;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ParserSettings implements ParserStrategy<Settings>{
+// Settings Parsing Strategy
+public class ParsingSettings implements ParsingStrategy<Settings>{
     @Override
     public Settings parse(String resourceFile) {
         Settings data = null;
         ObjectMapper mapper = new ObjectMapper();
         try {
-            InputStream is = getClass().getResourceAsStream("/" + resourceFile);
+            InputStream is = getClass().getResourceAsStream("/config/" + resourceFile);
             if (is == null) {
                throw new RuntimeException("File not found");
             }

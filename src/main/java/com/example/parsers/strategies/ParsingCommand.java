@@ -1,12 +1,12 @@
-package com.example.loaders.strategies;
+package com.example.parsers.strategies;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import com.example.commands.ParsedCommand;
 
-public class ParserCommand implements ParserStrategy<ParsedCommand>{
-
+// Command Parsing Strategy
+public class ParsingCommand implements ParsingStrategy<ParsedCommand>{
     @Override
     public ParsedCommand parse(String rawInput) {
         String command;

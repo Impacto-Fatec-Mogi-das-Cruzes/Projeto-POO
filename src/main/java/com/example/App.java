@@ -1,7 +1,7 @@
 package com.example;
 
 import com.example.gamestate.settings.Settings;
-import com.example.loaders.SettingsLoader;
+import com.example.parsers.SettingsParser;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,7 +21,7 @@ public class App extends Application {
             );
             Parent root = loader.load();
     
-            Settings settings = SettingsLoader.getInstance().parse("config/config.json");
+            Settings settings = SettingsParser.getInstance().parse("config.json");
             Scene scene = new Scene(root, settings.getScreen().getWidth(), settings.getScreen().getHeight());
     
             stage.setTitle("Projeto POO");

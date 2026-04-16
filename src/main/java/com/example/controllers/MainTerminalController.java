@@ -19,7 +19,7 @@ import com.example.commands.CommandRegistry;
 import com.example.commands.ParsedCommand;
 import com.example.commands.TerminalCommand;
 import com.example.commands.concretes.DuckCommand;
-import com.example.loaders.CommandLoader;
+import com.example.parsers.CommandParser;
 
 public class MainTerminalController implements Initializable {
 
@@ -56,8 +56,8 @@ public class MainTerminalController implements Initializable {
         String rawInput = commandInput.getText().trim();
         if (rawInput.isEmpty()) return;
 
-        CommandLoader commandLoader = CommandLoader.getInstance();
-        ParsedCommand parsedCommand = commandLoader.parse(rawInput);
+        CommandParser commandParser = CommandParser.getInstance();
+        ParsedCommand parsedCommand = commandParser.parse(rawInput);
 
         TerminalCommand command = CommandRegistry.getInstance().get(parsedCommand.command());
         
