@@ -15,11 +15,11 @@ import java.net.URL;
 //import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import com.example.commands.CommandRegistry;
 import com.example.commands.ParsedCommand;
 import com.example.commands.TerminalCommand;
 import com.example.commands.concretes.DuckCommand;
 import com.example.parsers.CommandParser;
+import com.example.registries.CommandRegistry;
 
 public class MainTerminalController implements Initializable {
 
@@ -48,9 +48,10 @@ public class MainTerminalController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        registerAllCommands(CommandRegistry.getInstance());
+        registerAllCommands();
     }
     
+    // TODO: change to new integration with the interfaces
     @FXML
     private void onCommandEntered() {
         String rawInput = commandInput.getText().trim();
@@ -94,8 +95,10 @@ public class MainTerminalController implements Initializable {
         Platform.runLater(() -> terminalScrollPane.setVvalue(1.0));
     }
 
-    private void registerAllCommands(CommandRegistry commandRegistry) {
-        commandRegistry.register(new DuckCommand());        
+    private void registerAllCommands() {
+        CommandRegistry commandRegistry =  CommandRegistry.getInstance();
+        DuckCommand duckCommand = new DuckCommand();
+        commandRegistry.register(duckCommand.getCommandName(), duckCommand);
     }
 
     // Some Template Methods
