@@ -5,9 +5,9 @@ module com.example {
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.annotation;
 
-    opens com.example.controllers to javafx.fxml;
-    opens com.example.gamestate.settings to com.fasterxml.jackson.databind;
-    opens com.example.gamestate.filestructure to com.fasterxml.jackson.databind;
-    opens com.example.gamestate.filestructure.concretes to com.fasterxml.jackson.databind;
+    opens com.example.ui.controllers to javafx.fxml;
+    opens com.example.core.settings to com.fasterxml.jackson.databind;
+    opens com.example.core.filestructure to com.fasterxml.jackson.databind;
+    opens com.example.core.filestructure.concretes to com.fasterxml.jackson.databind;
     exports com.example;
 }
