@@ -1,0 +1,57 @@
+{
+    "type": "directory",
+    "metadata": {
+        "password": "null",
+        "blocked": false,
+        "hidden": false,
+        "description": "null",
+        "size": 0,
+        "created": "1998-01-20T08:00:00",
+        "updated": "1998-11-30T17:00:00",
+        "readOnly": true
+    },
+    "children": {
+        "dir2": {
+            "type": "directory",
+            "metadata": {
+                "password": null,
+                "blocked": false,
+                "hidden": false,
+                "description": null,
+                "size": null,
+                "created": "1998-01-20T08:00:00",
+                "updated": "1998-11-30T17:00:00",
+                "readOnly": true
+            },
+            "children": {
+                "file2": {
+                    "type": "text",
+                    "metadata": {
+                        "password": null,
+                        "blocked": false,
+                        "hidden": false,
+                        "description": null,
+                        "size": null,
+                        "created": "2000-01-20T08:00:00",
+                        "updated": "2000-11-30T17:00:00",
+                        "readOnly": true
+                    }
+                }
+            }
+        },
+        "file": {
+            "type": "text",
+            "metadata": {
+                "password": null,
+                "blocked": false,
+                "hidden": false,
+                "description": null,
+                "size": null,
+                "created": "1999-01-20T08:00:00",
+                "updated": "1999-11-30T17:00:00",
+                "readOnly": true
+            },
+            "content": "Hello World, this is a simple test of the filestrcture"
+        }
+    }
+}

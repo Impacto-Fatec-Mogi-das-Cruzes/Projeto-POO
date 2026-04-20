@@ -18,6 +18,7 @@ import java.util.*;
 import com.example.commands.ParsedCommand;
 import com.example.commands.TerminalCommand;
 import com.example.commands.concretes.DuckCommand;
+import com.example.gamestate.filestructure.FileSystemEntry;
 import com.example.parsers.CommandParser;
 import com.example.registries.CommandRegistry;
 
@@ -45,10 +46,22 @@ public class MainTerminalController implements Initializable {
     @FXML private ScrollPane terminalScrollPane;
     @FXML private VBox terminalOutput;
     @FXML private TextField commandInput;
+    // TODO: add a context class to get current position and apply memento pattern to save navigation history
+    private FileSystemEntry root;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         registerAllCommands();
+        /*
+        TODO: implement this on the "go" command =)
+
+        FileSystemEntry root = FileStructureParser.getInstance().parse("example.json");
+        if (root instanceof Directory dir) {
+            System.out.println(dir.getChildren().get("file"));
+        } else if (root instanceof TextFile text) {
+            System.out.println(dir.getContent());
+        }
+        */
     }
     
     // TODO: change to new integration with the interfaces
