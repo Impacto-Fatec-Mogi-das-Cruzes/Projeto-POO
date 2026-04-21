@@ -17,7 +17,7 @@ public class App extends Application {
     public void start(Stage stage) {
         try {
             FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/interfaces/MainTerminalInterface.fxml")
+                getClass().getResource("/interfaces/terminal.fxml")
             );
             Parent root = loader.load();
     

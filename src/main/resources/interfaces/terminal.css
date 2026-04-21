@@ -232,3 +232,37 @@
 .text-field-cmd .selection {
     -fx-fill: #003300;
 }
+
+.terminal-scroll {
+    -fx-background: #000000;
+    -fx-background-color: #000000;
+    -fx-border-color: transparent;
+}
+.terminal-scroll .scroll-bar:horizontal {
+    -fx-background-color: #000000;   /* Dark background for the scrollbar */
+    -fx-pref-height: 12px;         /* Set the preferred height for the horizontal scrollbar */
+}
+
+.terminal-scroll .scroll-bar:horizontal .thumb {
+    -fx-background-color: #2e2e2e;   /* Gray color for the thumb (the draggable part) */
+    -fx-background-radius: 6px;   /* Rounded corners for the thumb */
+}
+
+/* Style for the vertical scrollbar inside terminal-scroll */
+.terminal-scroll .scroll-bar:vertical {
+    -fx-background-color: #000000;   /* Dark background for the scrollbar */
+    -fx-pref-width: 12px;         /* Set the preferred width for the vertical scrollbar */
+}
+
+.terminal-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: #2e2e2e;   /* Gray color for the thumb (the draggable part) */
+    -fx-background-radius: 6px;   /* Rounded corners for the thumb */
+}
+
+.term-line-system {
+    -fx-text-fill: #00ff41;
+}
+
+.term-line-error {
+    -fx-text-fill: #ff0000;
+}

@@ -7,7 +7,8 @@
 <BorderPane prefWidth="800.0" prefHeight="500.0"
             stylesheets="@terminal.css"
             xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1">
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.ui.controllers.TerminalController">
 
     <!-- TOP (Custom Title Bar with Close Button) -->
     <top>
@@ -17,17 +18,17 @@
                        styleClass="label-header"
                        HBox.hgrow="ALWAYS"/>
                 <Button text="X"
-                        styleClass="close-button"/>
+                        styleClass="close-button"
+                        onAction="#exitGame"/>
             </children>
         </HBox>
     </top>
 
     <!-- CENTER (OUTPUT) -->
     <center>
-        <ScrollPane fitToWidth="true" fitToHeight="true">
+        <ScrollPane fx:id="scrollPane" fitToWidth="true" styleClass="terminal-scroll">
             <content>
-                <TextFlow fx:id="outputArea"
-                          styleClass="vbox-chat"/>
+                <VBox fx:id="outputArea" styleClass="vbox-chat" spacing="5"/>
             </content>
         </ScrollPane>
     </center>
@@ -36,8 +37,8 @@
     <bottom>
         <HBox styleClass="hbox-input" spacing="5">
             <children>
-                <Label text="user@host" styleClass="label-prompt"/>
-                <TextField fx:id="inputField" HBox.hgrow="ALWAYS"/>
+                <Label text="enji@alfatecPC103 >" styleClass="label-prompt"/>
+                <TextField fx:id="inputField" HBox.hgrow="ALWAYS" onAction="#commandEntered" />
             </children>
         </HBox>
     </bottom>
