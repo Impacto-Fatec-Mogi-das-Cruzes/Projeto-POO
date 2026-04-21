@@ -1,8 +1,8 @@
-package com.example.core.commands.concretes;
+package com.example.core.command.concrete;
 
 import java.util.List;
 
-import com.example.core.commands.TerminalCommand;
+import com.example.core.command.TerminalCommand;
 
 public class DuckCommand extends TerminalCommand{
 

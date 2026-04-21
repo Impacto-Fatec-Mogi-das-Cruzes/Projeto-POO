@@ -1,10 +1,10 @@
-package com.example.ui.controllers;
+package com.example.ui.controller;
 
-import com.example.core.commands.ParsedCommand;
-import com.example.core.commands.TerminalCommand;
-import com.example.core.commands.concretes.DuckCommand;
-import com.example.service.parsers.CommandParser;
-import com.example.service.registries.CommandRegistry;
+import com.example.core.command.ParsedCommand;
+import com.example.core.command.TerminalCommand;
+import com.example.core.command.concrete.DuckCommand;
+import com.example.service.parser.CommandParser;
+import com.example.service.registry.CommandRegistry;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;

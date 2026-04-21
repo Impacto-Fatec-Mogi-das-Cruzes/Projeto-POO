@@ -1,4 +1,4 @@
-package com.example.core.filestructure.concretes;
+package com.example.core.filestructure.concrete;
 
 import java.util.Map;
 

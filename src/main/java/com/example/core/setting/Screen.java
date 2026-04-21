@@ -1,4 +1,4 @@
-package com.example.core.settings;
+package com.example.core.setting;
 
 public class Screen {
     private int width;

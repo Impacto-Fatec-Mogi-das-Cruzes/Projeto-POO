@@ -1,7 +1,7 @@
 package com.example.core.filestructure;
 
-import com.example.core.filestructure.concretes.Directory;
-import com.example.core.filestructure.concretes.TextFile;
+import com.example.core.filestructure.concrete.Directory;
+import com.example.core.filestructure.concrete.TextFile;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 

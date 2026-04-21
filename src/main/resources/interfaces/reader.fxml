@@ -9,7 +9,7 @@
 <BorderPane stylesheets="@terminal.css"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.ui.controllers.ReaderControler"
+            fx:controller="com.example.ui.controller.ReaderControler"
             fx:id="root">
 
     <!-- TOP -->

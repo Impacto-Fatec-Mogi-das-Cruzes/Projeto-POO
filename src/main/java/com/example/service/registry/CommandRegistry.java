@@ -1,6 +1,6 @@
-package com.example.service.registries;
+package com.example.service.registry;
 
-import com.example.core.commands.TerminalCommand;
+import com.example.core.command.TerminalCommand;
 
 public class CommandRegistry extends Registry<TerminalCommand> {
     private static final CommandRegistry instance = new CommandRegistry();

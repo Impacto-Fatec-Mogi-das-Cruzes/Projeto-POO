@@ -1,4 +1,4 @@
-package com.example.service.parsers.strategies;
+package com.example.service.parser.strategy;
 
 import java.io.InputStream;
 

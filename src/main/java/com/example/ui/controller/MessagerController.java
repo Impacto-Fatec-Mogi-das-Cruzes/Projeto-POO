@@ -1,4 +1,4 @@
-package com.example.ui.controllers;
+package com.example.ui.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;

@@ -1,7 +1,7 @@
 package com.example;
 
-import com.example.service.parsers.SettingsParser;
-import com.example.core.settings.Settings;
+import com.example.core.setting.Settings;
+import com.example.service.parser.SettingsParser;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

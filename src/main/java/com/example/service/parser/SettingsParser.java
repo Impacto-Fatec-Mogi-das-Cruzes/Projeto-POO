@@ -1,7 +1,7 @@
-package com.example.service.parsers;
+package com.example.service.parser;
 
-import com.example.service.parsers.strategies.ParsingSettings;
-import com.example.core.settings.Settings;
+import com.example.core.setting.Settings;
+import com.example.service.parser.strategy.ParsingSettings;
 
 public class SettingsParser extends Parser<Settings>{
     private static SettingsParser instance;

@@ -1,4 +1,4 @@
-package com.example.service.registries;
+package com.example.service.registry;
 
 import java.util.HashMap;
 import java.util.Map;

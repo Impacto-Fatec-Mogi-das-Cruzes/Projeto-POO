@@ -1,8 +1,8 @@
-package com.example.service.parsers.strategies;
+package com.example.service.parser.strategy;
 
 import java.io.InputStream;
 
-import com.example.core.settings.Settings;
+import com.example.core.setting.Settings;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 // Settings Parsing Strategy

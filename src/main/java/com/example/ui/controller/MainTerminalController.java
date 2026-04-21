@@ -1,4 +1,4 @@
-package com.example.ui.controllers;
+package com.example.ui.controller;
 
 //import javafx.animation.*;
 import javafx.application.Platform;
@@ -15,12 +15,12 @@ import java.net.URL;
 //import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import com.example.service.parsers.CommandParser;
-import com.example.service.parsers.FileStructureParser;
-import com.example.service.registries.CommandRegistry;
-import com.example.core.commands.ParsedCommand;
-import com.example.core.commands.TerminalCommand;
-import com.example.core.commands.concretes.DuckCommand;
+import com.example.service.parser.CommandParser;
+import com.example.service.parser.FileStructureParser;
+import com.example.service.registry.CommandRegistry;
+import com.example.core.command.ParsedCommand;
+import com.example.core.command.TerminalCommand;
+import com.example.core.command.concrete.DuckCommand;
 import com.example.core.filestructure.FileSystemEntry;
 
 public class MainTerminalController implements Initializable {
