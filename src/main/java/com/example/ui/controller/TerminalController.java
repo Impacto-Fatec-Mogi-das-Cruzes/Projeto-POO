@@ -1,10 +1,18 @@
 package com.example.ui.controller;
 
-import com.example.core.command.ParsedCommand;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.example.core.command.CommandExitCode;
+import com.example.core.command.CommandOutput;
 import com.example.core.command.TerminalCommand;
 import com.example.core.command.concrete.DuckCommand;
-import com.example.service.parser.CommandParser;
+import com.example.core.command.concrete.SayCommand;
+import com.example.service.CommandHandler;
 import com.example.service.registry.CommandRegistry;
+import com.example.ui.CommandParser;
+import com.example.ui.ParsedCommand;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -25,38 +33,41 @@ public class TerminalController {
 
     @FXML
     private void initialize() {
-        registerAllCommands();
+        List<TerminalCommand> commandsToRegister = new ArrayList<>();
+        commandsToRegister.addAll(Arrays.asList(
+            new DuckCommand(),
+            new SayCommand()
+        ));
+        registerAllCommands(commandsToRegister);
     }
 
-    private void registerAllCommands() {
+    private void registerAllCommands(List<TerminalCommand> commandsToRegister) {
         CommandRegistry commandRegistry =  CommandRegistry.getInstance();
-        DuckCommand duckCommand = new DuckCommand();
-        commandRegistry.register(duckCommand.getCommandName(), duckCommand);
+        for (TerminalCommand terminalCommand : commandsToRegister) {
+            commandRegistry.register(terminalCommand.getCommandName(), terminalCommand);
+        }
     }
 
     @FXML
     private void commandEntered() {
+
         String rawInput = inputField.getText().trim();
         if (rawInput.isEmpty()) return;
-
         CommandParser commandParser = CommandParser.getInstance();
         ParsedCommand parsedCommand = commandParser.parse(rawInput);
-        TerminalCommand command = CommandRegistry.getInstance().get(parsedCommand.command());
-        
-        String[] output;
+
+        CommandOutput output = CommandHandler.getInstance().handle(parsedCommand);        
         String styleClass = "";
-        if (command != null) {
-            command.run(parsedCommand.args());
-            output = command.getOutput().split("\n");
+
+        if (output.getExitCode() == CommandExitCode.SUCESS) {
             styleClass = "term-line-system";
-        } else {
-            output = "Invalid Command, please enter a valid command or use the {help} command for more information".split("\n");
+        } else if (output.getExitCode() == CommandExitCode.FAILURE) {
             styleClass = "term-line-error";
         }
 
         Label lineLabel = null;
         
-        for (String line : output) {
+        for (String line : output.getSegments()) {
             lineLabel = new Label(line);
             lineLabel.getStyleClass().add(styleClass);
             lineLabel.setMaxWidth(Double.MAX_VALUE);

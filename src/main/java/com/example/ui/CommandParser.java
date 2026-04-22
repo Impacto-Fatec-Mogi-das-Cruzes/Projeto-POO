@@ -1,6 +1,6 @@
-package com.example.service.parser;
+package com.example.ui;
 
-import com.example.core.command.ParsedCommand;
+import com.example.common.parser.Parser;
 import com.example.service.parser.strategy.ParsingCommand;
 
 public class CommandParser extends Parser<ParsedCommand> {

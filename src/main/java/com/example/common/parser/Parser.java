@@ -1,6 +1,4 @@
-package com.example.service.parser;
-
-import com.example.service.parser.strategy.ParsingStrategy;
+package com.example.common.parser;
 
 public abstract class Parser<T> {
     private final ParsingStrategy<T> parseStrategy;

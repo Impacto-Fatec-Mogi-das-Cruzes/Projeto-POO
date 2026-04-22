@@ -15,34 +15,61 @@ import java.net.URL;
 //import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import com.example.service.parser.CommandParser;
 import com.example.service.parser.FileStructureParser;
 import com.example.service.registry.CommandRegistry;
-import com.example.core.command.ParsedCommand;
+import com.example.ui.CommandParser;
+import com.example.ui.ParsedCommand;
 import com.example.core.command.TerminalCommand;
 import com.example.core.command.concrete.DuckCommand;
 import com.example.core.filestructure.FileSystemEntry;
 
 public class MainTerminalController implements Initializable {
+    @FXML
+    private Label statusIndicator;
 
-    // @FXML private Label clockLabel;
-    // @FXML private Label statusIndicator;
-    // @FXML private Label statusLabel;
-    // @FXML private Label caseIdLabel;
-    // @FXML private Label userLabel;
-    // @FXML private Label currentPathLabel;
-    // @FXML private Label selectedFileName;
-    // @FXML private Label selectedFileSize;
-    // @FXML private Label selectedFileDate;
-    // @FXML private Label terminalStatusLabel;
-    // @FXML private Label commandCountLabel;
-    // @FXML private Label systemMessageLabel;
-    // @FXML private Label memoryLabel;
-    // @FXML private Label diskLabel;
-    // @FXML private Label modeLabel;
-    // @FXML private Label errorCountLabel;
-    // @FXML private Label promptLabel;
-    // @FXML private Label cursorLabel;
+    @FXML
+    private Label statusLabel;
+
+    @FXML
+    private Label caseIdLabel;
+
+    @FXML
+    private Label userLabel;
+
+    @FXML
+    private Label clockLabel;
+
+    @FXML
+    private Label terminalStatusLabel;
+
+    @FXML
+    private Label commandCountLabel;
+
+    @FXML
+    private Label scanlineLabel;
+
+    @FXML
+    private Label promptLabel;
+
+    @FXML
+    private Label cursorLabel;
+
+    @FXML
+    private Label memoryLabel;
+
+    @FXML
+    private Label diskLabel;
+
+    @FXML
+    private Label modeLabel;
+
+    @FXML
+    private Label systemMessageLabel;
+
+    @FXML
+    private Label errorCountLabel;
+
+
 
     @FXML private ScrollPane terminalScrollPane;
     @FXML private VBox terminalOutput;
@@ -81,8 +108,8 @@ public class MainTerminalController implements Initializable {
         // TODO: implement a class to format output
         String output = "", styleClass = "";
         if (command != null) {
-            command.run(parsedCommand.args());
-            output = command.getOutput();
+            // command.run(parsedCommand.args());
+            // output = command.getOutput();
             styleClass = "term-line-system";
         } else {
             output = "Invalid Command, please enter a valid command or use the {help} command for more information";

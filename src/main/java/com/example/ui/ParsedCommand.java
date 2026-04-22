@@ -1,4 +1,4 @@
-package com.example.core.command;
+package com.example.ui;
 
 import java.util.List;
 

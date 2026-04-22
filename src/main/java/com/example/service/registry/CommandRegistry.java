@@ -1,5 +1,6 @@
 package com.example.service.registry;
 
+import com.example.common.Registry;
 import com.example.core.command.TerminalCommand;
 
 public class CommandRegistry extends Registry<TerminalCommand> {

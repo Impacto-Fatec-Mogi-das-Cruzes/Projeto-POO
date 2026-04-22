@@ -1,13 +1,13 @@
-package com.example.service.registry;
+package com.example.common;
 
 import java.util.HashMap;
 import java.util.Map;
 
 // Registry Pattern
-abstract class Registry<T> {
+public abstract class Registry<T> {
     private Map<String, T> registry;
     
-    Registry() {
+    public Registry() {
         registry = new HashMap<>();
     }
 

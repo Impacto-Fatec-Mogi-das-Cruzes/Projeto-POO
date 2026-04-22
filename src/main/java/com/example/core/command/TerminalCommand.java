@@ -4,36 +4,26 @@ import java.util.List;
 
 public abstract class TerminalCommand {
 
-    private final String commandName;
-    private final String helpMessageBrief;
-    private final String helpMessageLong;
-    private String output;
+    private final CommandMetadata metadata;
+    protected CommandOutputBuilder builder = new CommandOutputBuilder();
+    protected CommandOutput output;
 
-    public TerminalCommand(String commandName, String helpMessageBrief, String helpMessageLong) {
-        this.commandName = commandName;
-        this.helpMessageBrief = helpMessageBrief;
-        this.helpMessageLong = helpMessageLong;
+    public TerminalCommand(CommandMetadata metadata) {
+        this.metadata = metadata;
     }
     
     public String getCommandName(){
-        return this.commandName;
+        return this.metadata.commandName();
     }
     
     public String getHelpMessageBrief(){
-        return this.helpMessageBrief;
+        return this.metadata.helpMessageBrief();
     }
 
     public String getHelpMessageLong(){
-        return this.helpMessageLong;
+        return this.metadata.helpMessageLong();
     }
     
-    public String getOutput() {
-        return this.output;
-    }
-    
-    public void setOutput(String output) {
-        this.output = output;
-    }
+    public abstract CommandOutput run(List<String> args);
 
-    public abstract void run(List<String> args);
 }

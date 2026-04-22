@@ -1,5 +1,6 @@
 package com.example.service.parser;
 
+import com.example.common.parser.Parser;
 import com.example.core.filestructure.FileSystemEntry;
 import com.example.service.parser.strategy.ParsingFileStrucure;
 

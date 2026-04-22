@@ -2,6 +2,7 @@ package com.example.service.parser.strategy;
 
 import java.io.InputStream;
 
+import com.example.common.parser.ParsingStrategy;
 import com.example.core.filestructure.FileSystemEntry;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
