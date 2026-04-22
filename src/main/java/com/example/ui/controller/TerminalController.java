@@ -27,6 +27,7 @@ public class TerminalController {
     private void initialize() {
         registerAllCommands();
     }
+
     private void registerAllCommands() {
         CommandRegistry commandRegistry =  CommandRegistry.getInstance();
         DuckCommand duckCommand = new DuckCommand();
