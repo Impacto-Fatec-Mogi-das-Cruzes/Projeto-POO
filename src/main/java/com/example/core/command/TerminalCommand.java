@@ -5,7 +5,6 @@ import java.util.List;
 public abstract class TerminalCommand {
 
     private final CommandMetadata metadata;
-    protected CommandOutputBuilder builder = new CommandOutputBuilder();
     protected CommandOutput output;
 
     public TerminalCommand(CommandMetadata metadata) {

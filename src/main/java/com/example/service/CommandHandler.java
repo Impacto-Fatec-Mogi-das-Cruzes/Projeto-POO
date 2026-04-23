@@ -25,6 +25,8 @@ public class CommandHandler {
         if (terminalCommand == null) {
             terminalCommand = new InvalidCommand();
         }
+        // CommandOutput a = terminalCommand.run(parsedCommand.args());
+        // System.out.println(a.getSegments());
         return terminalCommand.run(parsedCommand.args());
     }
 }

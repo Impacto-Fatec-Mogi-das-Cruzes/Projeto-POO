@@ -2,8 +2,10 @@ package com.example.core.command.concrete;
 
 import java.util.List;
 
+import com.example.core.command.CommandExitCode;
 import com.example.core.command.CommandMetadata;
 import com.example.core.command.CommandOutput;
+import com.example.core.command.CommandOutputBuilder;
 import com.example.core.command.TerminalCommand;
 
 public class SayCommand extends TerminalCommand {
@@ -14,11 +16,14 @@ public class SayCommand extends TerminalCommand {
 
     @Override
     public CommandOutput run(List<String> args) {
+        CommandOutputBuilder outputBuilder = new CommandOutputBuilder();
+
         String phrase = "";
         for (String arg : args) {
-            phrase.concat(arg);
+            phrase += arg + " ";
         }
-        builder.text(phrase);
-        return builder.build();
+        
+        outputBuilder.text(phrase).exitCode(CommandExitCode.SUCESS);
+        return outputBuilder.build();
     }
 }
