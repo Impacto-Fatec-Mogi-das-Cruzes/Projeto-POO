@@ -74,9 +74,9 @@ public class TerminalController {
         String styleClass = "";
 
         if (output.getExitCode() == CommandExitCode.SUCESS) {
-            styleClass = "term-line-system";
+            styleClass = "system";
         } else if (output.getExitCode() == CommandExitCode.FAILURE) {
-            styleClass = "term-line-error";
+            styleClass = "error";
         }
 
         Label lineLabel = null;

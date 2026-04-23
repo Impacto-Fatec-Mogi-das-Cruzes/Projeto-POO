@@ -71,7 +71,6 @@
 /* TEXT OUTPUT */
 .game-output .label {
     -fx-background-color: #121826;
-    -fx-text-fill: #cbd5e1;
     -fx-font-size: 13px;
 }
 
@@ -113,6 +112,10 @@
 /* =========================
    STATUS COLORS (LOG SYSTEM)
 ========================= */
+.system {
+    -fx-text-fill: #cbd5e1;
+}
+
 .success {
     -fx-text-fill: #22c55e;
 }
