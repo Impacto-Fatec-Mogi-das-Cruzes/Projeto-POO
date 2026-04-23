@@ -4,7 +4,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.NoSuchElementException;
 
-import com.example.core.filestructure.DirectorySnapshot;
 import com.example.core.filestructure.concrete.Directory;
 
 // TODO: add observer pattern to openTextFile and make scene manager subcriber to make the following flow
@@ -17,7 +16,7 @@ public class SystemContext {
     private static SystemContext instance;
     private Directory currentDirectory;
     // private TextFile openTextFile;
-    private Deque<DirectorySnapshot> history = new ArrayDeque<>();
+    private Deque<Directory> history = new ArrayDeque<>();
 
     private SystemContext() {
     }
@@ -35,7 +34,7 @@ public class SystemContext {
 
     public void setCurrentDirectory(Directory newDirectory) {
         if (currentDirectory != null) {
-            history.add(currentDirectory.save());
+            history.add(currentDirectory);
         }
         this.currentDirectory = newDirectory;
     }
@@ -44,7 +43,6 @@ public class SystemContext {
         if (history.isEmpty()) {
             throw new NoSuchElementException("Deque is empty no item to be removed");
         }
-        DirectorySnapshot snapshot = history.pop();
-        snapshot.restore();
+        currentDirectory = history.pop();
     }
 }
