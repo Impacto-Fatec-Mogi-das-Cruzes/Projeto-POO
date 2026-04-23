@@ -4,6 +4,7 @@ import com.example.core.setting.Settings;
 import com.example.service.parser.SettingsParser;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -35,6 +36,7 @@ public class App extends Application {
             stage.show();
         } catch (Exception e) {
             System.err.println(e);
+            Platform.exit();
         }
     }
 
