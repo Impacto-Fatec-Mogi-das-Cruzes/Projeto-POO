@@ -14,7 +14,6 @@ public class DuckCommand extends TerminalCommand{
         super(new CommandMetadata("duck", "shows a duck", "Yeah, it just shows a duck idk what more to say"));
     }
 
-    // TODO: find a way to deal with args
     @Override
     public CommandOutput run(List<String> args) {        
         CommandOutputBuilder outputBuilder = new CommandOutputBuilder();

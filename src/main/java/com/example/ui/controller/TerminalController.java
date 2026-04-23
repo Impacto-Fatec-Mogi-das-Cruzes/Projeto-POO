@@ -64,7 +64,7 @@ public class TerminalController {
 
     @FXML
     private void commandEntered() {
-
+        //TODO: Divide this process in different methods
         String rawInput = inputField.getText().trim();
         if (rawInput.isEmpty()) return;
         CommandParser commandParser = CommandParser.getInstance();

@@ -22,7 +22,8 @@ public abstract class TerminalCommand {
     public String getHelpMessageLong(){
         return this.metadata.helpMessageLong();
     }
-    
+
+    // TODO: find a clean way to deal with args
     public abstract CommandOutput run(List<String> args);
 
 }

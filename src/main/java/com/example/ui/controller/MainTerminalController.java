@@ -74,7 +74,6 @@ public class MainTerminalController implements Initializable {
     @FXML private ScrollPane terminalScrollPane;
     @FXML private VBox terminalOutput;
     @FXML private TextField commandInput;
-    // TODO: add a context class to get current position and apply memento pattern to save navigation history
     private FileSystemEntry root;
 
     @Override
@@ -83,7 +82,6 @@ public class MainTerminalController implements Initializable {
         this.root = FileStructureParser.getInstance().parse("example.json");
         this.root.getType();
         /*
-        TODO: implement this on the "go" command =)
 
         FileSystemEntry root = FileStructureParser.getInstance().parse("example.json");
         if (root instanceof Directory dir) {
@@ -94,7 +92,6 @@ public class MainTerminalController implements Initializable {
         */
     }
     
-    // TODO: change to new integration with the interfaces
     @FXML
     private void onCommandEntered() {
         String rawInput = commandInput.getText().trim();
@@ -105,7 +102,6 @@ public class MainTerminalController implements Initializable {
 
         TerminalCommand command = CommandRegistry.getInstance().get(parsedCommand.command());
         
-        // TODO: implement a class to format output
         String output = "", styleClass = "";
         if (command != null) {
             // command.run(parsedCommand.args());
