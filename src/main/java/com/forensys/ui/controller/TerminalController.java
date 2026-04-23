@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.forensys.core.SystemContext;
+import com.forensys.common.ApplicationContext;
 import com.forensys.core.command.CommandExitCode;
 import com.forensys.core.command.CommandOutput;
 import com.forensys.core.command.TerminalCommand;
@@ -40,7 +40,7 @@ public class TerminalController {
     @FXML
     private void initialize() {
 
-        SystemContext context = SystemContext.getInstance();
+        ApplicationContext context = ApplicationContext.getInstance();
         FileStructureParser fileStructureParser = FileStructureParser.getInstance();
         FileSystemEntry root = fileStructureParser.parse("example.json");
         context.setCurrentDirectory((Directory) root);

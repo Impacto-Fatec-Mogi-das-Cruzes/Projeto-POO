@@ -3,7 +3,7 @@ package com.forensys.core.command.concrete;
 import java.util.List;
 import java.util.Map;
 
-import com.forensys.core.SystemContext;
+import com.forensys.common.ApplicationContext;
 import com.forensys.core.command.CommandExitCode;
 import com.forensys.core.command.CommandMetadata;
 import com.forensys.core.command.CommandOutput;
@@ -20,7 +20,7 @@ public class ListCommand extends TerminalCommand {
 
     @Override
     public CommandOutput run(List<String> args) {
-        SystemContext context = SystemContext.getInstance();
+        ApplicationContext context = ApplicationContext.getInstance();
         CommandOutputBuilder outputBuilder = new CommandOutputBuilder();
 
         outputBuilder.text("In the current directory you have:");

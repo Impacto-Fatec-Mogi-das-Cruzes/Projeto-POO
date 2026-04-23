@@ -1,4 +1,4 @@
-package com.forensys.core;
+package com.forensys.common;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -11,19 +11,19 @@ import com.forensys.core.filestructure.concrete.Directory;
 Controller -> "Do something" -> Service -> "Use this" -> Core -> {may update Context} -> {notify subscribers} -> Scene Manager -> "Change scene to..."
 this flow will be useful for "read" command
 */
-public class SystemContext {
+public class ApplicationContext {
 
-    private static SystemContext instance;
+    private static ApplicationContext instance;
     private Directory currentDirectory;
     // private TextFile openTextFile;
     private Deque<Directory> history = new ArrayDeque<>();
 
-    private SystemContext() {
+    private ApplicationContext() {
     }
 
-    public static SystemContext getInstance() {
+    public static ApplicationContext getInstance() {
         if (instance == null) {
-            instance = new SystemContext();
+            instance = new ApplicationContext();
         }
         return instance;
     }
