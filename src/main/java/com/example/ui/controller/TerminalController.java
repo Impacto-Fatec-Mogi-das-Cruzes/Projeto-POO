@@ -4,14 +4,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.example.core.SystemContext;
 import com.example.core.command.CommandExitCode;
 import com.example.core.command.CommandOutput;
 import com.example.core.command.TerminalCommand;
 import com.example.core.command.concrete.DuckCommand;
+import com.example.core.command.concrete.GoCommand;
 import com.example.core.command.concrete.SayCommand;
+import com.example.core.filestructure.FileSystemEntry;
+import com.example.core.filestructure.concrete.Directory;
 import com.example.service.CommandHandler;
 import com.example.service.registry.CommandRegistry;
 import com.example.ui.CommandParser;
+import com.example.ui.FileStructureParser;
 import com.example.ui.ParsedCommand;
 
 import javafx.application.Platform;
@@ -33,10 +38,17 @@ public class TerminalController {
 
     @FXML
     private void initialize() {
+
+        SystemContext context = SystemContext.getInstance();
+        FileStructureParser fileStructureParser = FileStructureParser.getInstance();
+        FileSystemEntry root = fileStructureParser.parse("example.json");
+        context.setCurrentDirectory((Directory) root);
+
         List<TerminalCommand> commandsToRegister = new ArrayList<>();
         commandsToRegister.addAll(Arrays.asList(
             new DuckCommand(),
-            new SayCommand()
+            new SayCommand(),
+            new GoCommand()
         ));
         registerAllCommands(commandsToRegister);
     }

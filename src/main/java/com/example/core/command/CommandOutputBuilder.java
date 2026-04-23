@@ -18,12 +18,14 @@ public class CommandOutputBuilder {
         return this;
     }
 
-    public void exitCode(CommandExitCode failure) {
+    public CommandOutputBuilder exitCode(CommandExitCode failure) {
         this.exitCode = failure;
+        return this;
     }
     
-    public void clearScreen(boolean clearScreen) {
+    public CommandOutputBuilder clearScreen(boolean clearScreen) {
         this.clearScreen = clearScreen;
+        return this;
     }
 
     public CommandOutput build() {

@@ -2,6 +2,7 @@ package com.example.core;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.NoSuchElementException;
 
 import com.example.core.filestructure.DirectorySnapshot;
 import com.example.core.filestructure.concrete.Directory;
@@ -33,11 +34,16 @@ public class SystemContext {
     }
 
     public void setCurrentDirectory(Directory newDirectory) {
-        history.add(currentDirectory.save());
+        if (currentDirectory != null) {
+            history.add(currentDirectory.save());
+        }
         this.currentDirectory = newDirectory;
     }
 
     public void restore() {
+        if (history.isEmpty()) {
+            throw new NoSuchElementException("Deque is empty no item to be removed");
+        }
         DirectorySnapshot snapshot = history.pop();
         snapshot.restore();
     }
