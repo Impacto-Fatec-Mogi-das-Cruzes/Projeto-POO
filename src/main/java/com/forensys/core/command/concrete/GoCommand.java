@@ -1,7 +1,6 @@
 package com.forensys.core.command.concrete;
 
 import java.util.List;
-import java.util.Map;
 import java.util.NoSuchElementException;
 
 import com.forensys.common.ApplicationContext;
@@ -24,7 +23,7 @@ public class GoCommand extends TerminalCommand {
     public CommandOutput run(List<String> args) {
         ApplicationContext context = ApplicationContext.getInstance();
         CommandOutputBuilder outputBuilder = new CommandOutputBuilder();
-        Map<String, FileSystemEntry> children = context.getCurrentDirectory().getChildren();
+        List<FileSystemEntry> children = context.getCurrentDirectory().getChildren();
 
         if (args.size() > 1) {
             return outputBuilder.text("Too many arguments passed for command go").exitCode(CommandExitCode.FAILURE).build();
@@ -38,7 +37,7 @@ public class GoCommand extends TerminalCommand {
                 return outputBuilder.text("No parent directory to go back to").exitCode(CommandExitCode.FAILURE).build();
             }
         } else {
-            FileSystemEntry fileSystemEntry = children.get(args.getFirst());
+            FileSystemEntry fileSystemEntry = children.stream().filter(obj -> obj.getMetadata().getName().equals(args.getFirst())).findFirst().orElse(null);
             if (!(fileSystemEntry instanceof Directory)) {
                 return outputBuilder.text("Cannot go there, please choose a directory to go").exitCode(CommandExitCode.FAILURE).build();
             }

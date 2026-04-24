@@ -1,6 +1,7 @@
 {
     "type": "directory",
     "metadata": {
+        "name": "dir1",
         "password": "null",
         "blocked": false,
         "hidden": false,
@@ -10,10 +11,11 @@
         "updated": "1998-11-30T17:00:00",
         "readOnly": true
     },
-    "children": {
-        "dir2": {
+    "children": [
+        {
             "type": "directory",
             "metadata": {
+                "name": "dir2",
                 "password": null,
                 "blocked": false,
                 "hidden": false,
@@ -23,10 +25,11 @@
                 "updated": "1998-11-30T17:00:00",
                 "readOnly": true
             },
-            "children": {
-                "file2": {
+            "children": [
+                {
                     "type": "text",
                     "metadata": {
+                        "name": "file2",
                         "password": null,
                         "blocked": false,
                         "hidden": false,
@@ -35,13 +38,15 @@
                         "created": "2000-01-20T08:00:00",
                         "updated": "2000-11-30T17:00:00",
                         "readOnly": true
-                    }
+                    },
+                    "content": "Hello"
                 }
-            }
+            ]
         },
-        "file": {
+        {
             "type": "text",
             "metadata": {
+                "name": "file",
                 "password": null,
                 "blocked": false,
                 "hidden": false,
@@ -53,5 +58,5 @@
             },
             "content": "Hello World, this is a simple test of the filestrcture"
         }
-    }
+    ]
 }

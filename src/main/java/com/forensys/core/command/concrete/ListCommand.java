@@ -1,7 +1,6 @@
 package com.forensys.core.command.concrete;
 
 import java.util.List;
-import java.util.Map;
 
 import com.forensys.common.ApplicationContext;
 import com.forensys.core.command.CommandExitCode;
@@ -24,11 +23,11 @@ public class ListCommand extends TerminalCommand {
         CommandOutputBuilder outputBuilder = new CommandOutputBuilder();
 
         outputBuilder.text("In the current directory you have:");
-        for (Map.Entry<String,FileSystemEntry> entry : context.getCurrentDirectory().getChildren().entrySet()) {
-            if (entry.getValue() instanceof Directory) {
-                outputBuilder.text("\t" + entry.getKey() + "/");
+        for (FileSystemEntry entry : context.getCurrentDirectory().getChildren()) {
+            if (entry instanceof Directory) {
+                outputBuilder.text("\t" + entry.getMetadata().getName() + "/");
             } else {
-                outputBuilder.text("\t" + entry.getKey());
+                outputBuilder.text("\t" + entry.getMetadata().getName());
             }
         }
 

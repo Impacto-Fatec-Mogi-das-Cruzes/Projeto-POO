@@ -1,6 +1,7 @@
 package com.forensys.core.filestructure;
 
-class FileMetadata {
+public class FileMetadata {
+    private String name;
     private String password;
     private boolean blocked;
     private boolean hidden;
@@ -74,5 +75,13 @@ class FileMetadata {
 
     public void setReadOnly(boolean readOnly) {
         this.readOnly = readOnly;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

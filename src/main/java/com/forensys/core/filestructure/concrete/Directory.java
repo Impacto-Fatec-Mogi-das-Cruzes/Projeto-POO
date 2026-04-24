@@ -1,20 +1,20 @@
 package com.forensys.core.filestructure.concrete;
 
-import java.util.Map;
+import java.util.List;
 
 import com.forensys.core.filestructure.FileSystemEntry;
 
 public class Directory extends FileSystemEntry {
     
-    private Map<String, FileSystemEntry> children;
+    private List<FileSystemEntry> children;
 
     public Directory() {}
 
-    public Map<String, FileSystemEntry> getChildren() {
+    public List<FileSystemEntry> getChildren() {
         return children;
     }
 
-    public void setChildren(Map<String, FileSystemEntry> children) {
+    public void setChildren(List<FileSystemEntry> children) {
         this.children = children;
     }
 }
