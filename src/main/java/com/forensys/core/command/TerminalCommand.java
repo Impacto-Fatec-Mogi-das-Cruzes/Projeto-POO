@@ -5,9 +5,8 @@ import java.util.List;
 public abstract class TerminalCommand {
 
     private final CommandMetadata metadata;
-    protected CommandOutput output;
 
-    public TerminalCommand(CommandMetadata metadata) {
+    protected TerminalCommand(CommandMetadata metadata) {
         this.metadata = metadata;
     }
     
