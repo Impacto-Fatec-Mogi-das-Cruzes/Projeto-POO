@@ -33,6 +33,7 @@ public class GoCommand extends TerminalCommand {
         if (args.getFirst().equals("back")) {
             try {
                 context.restore();
+                outputBuilder.text("Back to parent directory").exitCode(CommandExitCode.SUCESS).build();
             } catch (NoSuchElementException e) {
                 return outputBuilder.text("No parent directory to go back to").exitCode(CommandExitCode.FAILURE).build();
             }
@@ -42,9 +43,10 @@ public class GoCommand extends TerminalCommand {
                 return outputBuilder.text("Cannot go there, please choose a directory to go").exitCode(CommandExitCode.FAILURE).build();
             }
             context.setCurrentDirectory((Directory) fileSystemEntry);
+            outputBuilder.text("Changed dir to " + args.getFirst()).exitCode(CommandExitCode.SUCESS);
         }
 
-        return outputBuilder.exitCode(CommandExitCode.SUCESS).build();
+        return outputBuilder.build();
     }
 
 }
