@@ -34,7 +34,7 @@ public class GoCommand extends TerminalCommand {
 
         if ("back".equals(target)) {
             try {
-                context.restore();
+                context.restoreDirectory();
                 outputBuilder
                         .text("Back to directory " + context.getCurrentDirectory().getMetadata().name())
                         .exitCode(CommandExitCode.SUCESS);

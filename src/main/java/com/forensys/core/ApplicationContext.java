@@ -39,7 +39,7 @@ public class ApplicationContext {
         this.currentDirectory = newDirectory;
     }
 
-    public void restore() {
+    public void restoreDirectory() {
         if (history.isEmpty()) {
             throw new NoSuchElementException("Deque is empty no item to be removed");
         }
