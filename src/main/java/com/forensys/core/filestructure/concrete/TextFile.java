@@ -9,10 +9,6 @@ public class TextFile extends FileSystemEntry {
     
     public TextFile() {}
     
-    public void setContent(String content) {
-        this.content = content;
-    }
-
     public String getContent() {
         return content;
     }

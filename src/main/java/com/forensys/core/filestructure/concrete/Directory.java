@@ -13,8 +13,4 @@ public class Directory extends FileSystemEntry {
     public List<FileSystemEntry> getChildren() {
         return children;
     }
-
-    public void setChildren(List<FileSystemEntry> children) {
-        this.children = children;
-    }
 }
