@@ -8,7 +8,7 @@ public class CommandOutput {
     private CommandExitCode exitCode;
     private boolean clearScreen;
 
-    CommandOutput(List<String> segments, CommandExitCode exitCode, boolean clearScreen) {
+    protected CommandOutput(List<String> segments, CommandExitCode exitCode, boolean clearScreen) {
         this.exitCode = exitCode;
         this.segments = segments;
         this.clearScreen = clearScreen;
